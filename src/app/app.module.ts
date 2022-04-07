@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { JosephComponent } from './joseph/joseph.component';
+import { GroupWorkComponent } from './group-work/group-work.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    JosephComponent
+    JosephComponent,
+    GroupWorkComponent
   ],
   imports: [
     BrowserModule,
