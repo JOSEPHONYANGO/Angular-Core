@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ArgumentOutOfRangeError, reduce } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
   <input [id]="myId" type="text" value="Joseph">
   <h2 [class]="textColor">Coding is fun</h2> 
   <h2 [ngClass]="messageClasses">Coding Tek</h2>
+  <h3 [style.color]="hasError ?'red':'orange'"> Ahero Coding</h3>
+  <h2 [style.color]="highlightColor">Yesu Duogo Kendo</h2>
+  <h2 [ngStyle]="fontStyles"> TALANTA DIGITAL SOLUTIONS</h2>
 
   `
     ,
@@ -27,8 +31,13 @@ export class AppComponent {
   public name="codevolution";
   public myId="testId";
   public textColor="text-success";
-  public hasError=true;
+  public hasError=false;
   public isSpecial=true;
+  public highlightColor="blue";
+  public fontStyles={
+    color:"green",
+    fontStyle:"italic",
+  }
   public messageClasses={
     "text-success":!this.hasError,
     "text-danger":this.hasError,
