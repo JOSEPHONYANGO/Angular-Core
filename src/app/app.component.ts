@@ -11,6 +11,26 @@ import { ArgumentOutOfRangeError, reduce } from 'rxjs';
   <h3 [style.color]="hasError ?'red':'orange'"> Ahero Coding</h3>
   <h2 [style.color]="highlightColor">Yesu Duogo Kendo</h2>
   <h2 [ngStyle]="fontStyles"> TALANTA DIGITAL SOLUTIONS</h2>
+  <button (click)="onClick()">GREET</button>
+  {{greeting}}
+  <p>The cars Bishop has</p>
+  <div class="container">
+  <p>{{cars[2]}}</p>
+  <p>{{cars[0]}}</p>
+  <p>{{cars[1]}}</p>
+  </div>
+
+  <p>Angel is a powerful girl</p>
+  <ul> 
+  <p>Name:{{person.name}}</p>
+  <p>Age:{{person.age}}</p>
+  <p>Car:{{person.car}}</p>
+  <p>Religion:{{person.religion}}</p>
+    </ul>
+    <div>
+     is{{person.name}} truly rich?{{isRich}}Boolean
+    </div>
+
 
   `
     ,
@@ -34,6 +54,7 @@ export class AppComponent {
   public hasError=false;
   public isSpecial=true;
   public highlightColor="blue";
+  public greeting="";
   public fontStyles={
     color:"green",
     fontStyle:"italic",
@@ -44,11 +65,20 @@ export class AppComponent {
     "text-special":this.isSpecial,
 
   }
+  cars=['Suzuki','Mazda','Prado'];//Array
+
+  person={name:"Angel",age:35,car:"Hummer",religion:"Christian"};//Object
+
+  isRich=true;
 
   constructor(){
     
 
   }
+  onClick (){
+    console.log();
+    this.greeting='Welcome to Talanta Digital Solution';
+    }
 }
 
 

@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { JosephComponent } from './joseph/joseph.component';
 import { GroupWorkComponent } from './group-work/group-work.component';
+import { InterpolationComponent } from './interpolation/interpolation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
     JosephComponent,
-    GroupWorkComponent
+    GroupWorkComponent,
+    InterpolationComponent
   ],
   imports: [
     BrowserModule,
