@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InterpolationComponent implements OnInit {
 
-  name:string = 'Interpolation Component'
+  name:string = 'Interpolation Component';
+  cars=['mazda','subaru','suzuki'];
+
+  person={name:'Angie',age:23,car:'Toyota'};
+
+  isRich=true;
 
   constructor() { }
 
