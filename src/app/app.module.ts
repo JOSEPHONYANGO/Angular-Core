@@ -12,6 +12,9 @@ import { HeaderComponent } from './PROJECT-VOTE/quotes-application/header/header
 import { QuotesComponent } from './PROJECT-VOTE/quotes-application/quotes/quotes.component';
 import { PostQuoteComponent } from './PROJECT-VOTE/quotes-application/post-quote/post-quote.component';
 
+import { PropertyBindingComponent } from './BASICS/Data-Binding/property-binding/property-binding.component';
+import { EventBindingComponent } from './BASICS/Data-Binding/event-binding/event-binding.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +25,8 @@ import { PostQuoteComponent } from './PROJECT-VOTE/quotes-application/post-quote
     MainComponent,
     HeaderComponent,
     QuotesComponent,
-    PostQuoteComponent
+    PostQuoteComponent,    
+    PropertyBindingComponent, EventBindingComponent
   ],
   imports: [
     BrowserModule,
